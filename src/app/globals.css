@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+@font-face {
+    font-family: 'ArnoPro';
+    src: url('/Fonts/ArnoPro-Regular2.woff2') format('woff2'),
+         url('/Fonts/ArnoPro-Regular2.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.pinterest-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 16px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #a77c3b;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Example: Make some items span more rows/columns for variety */
+  .item-a { grid-row: span 5;}
+  .item-b { grid-row: span 5;}
+  .item-c { grid-column: span 2;}
+  .item-d { grid-row: span 2;}
+  .item-e { grid-row: span 2;}
+  .item-f { grid-row: span 2;}
+
+  /* pinterest style product grid */
+
+  body {
+    background-image: url('/gray-logo-ad.svg');
+    background-repeat: repeat;
+    background-position: top;
+    background-size: 4000px 4000px;
+  }
+
+
+
+  /* animated book button */
+
+  .animated-book-button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 26px;
+      border: 4px solid;
+      border-color: transparent;
+      font-size: 16px;
+      background-color: inherit;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      box-shadow: 0 0 0 2px #a36e3a;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      text-decoration: none;
+  }
+  
+  .animated-book-button svg {
+      position: absolute;
+      width: 24px;
+      fill: white;
+      z-index: 9;
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-book-button .arr-1 {
+      right: 16px;
+  }
+  
+  .animated-book-button .arr-2 {
+      left: -25%;
+  }
+  
+  .animated-book-button .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background-color: #a36e3a;
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-book-button .text {
+      position: relative;
+      color: rgb(25, 24, 24);
+      z-index: 10;
+      transform: translateX(-12px);
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      font-family: 'ArnoPro', serif;
+  }
+  
+  .animated-book-button:hover {
+      box-shadow: 0 0 0 12px transparent;
+      color: white;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .animated-book-button:hover .arr-1 {
+      right: -25%;
+  }
+  
+  .animated-book-button:hover .arr-2 {
+      left: 16px;
+  }
+  
+  .animated-book-button:hover .text {
+      transform: translateX(12px);
+  }
+  
+  .animated-book-button:hover svg {
+      fill: white;
+  }
+  
+  .animated-book-button:active {
+      scale: 0.95;
+      box-shadow: 0 0 0 4px #a36e3a;
+  }
+  
+  .animated-book-button:hover .circle {
+      width: 220px;
+      height: 220px;
+      opacity: 1;
+  }
