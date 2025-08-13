@@ -1,6 +1,5 @@
 import Header from "../../../Header";
 import Footer from "../../../Footer";
-import Image from "next/image";
 import MovingCarousel from "../../../components/MovingCarousel"
 import AccommodationsBox from "../../../components/accommodationsBox"
 import SideBarProduct from "@/app/components/sideBarProduct"
