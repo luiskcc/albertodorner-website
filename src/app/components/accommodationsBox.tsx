@@ -52,12 +52,14 @@ export default function AccommodationsBox() {
                 </Swiper>
             </div>
             <div className="flex flex-row justify-center">
-                <div className="bg-[linear-gradient(135deg,_#9b7145_0%,_#8ee3ec_50%,_#e0d6cb_100%)] w-[500px] h-[500px] flex items-center justify-center">
-                    <h1 className="text-white italic text-8xl font-bold relative top-50 right-20">home A</h1>
+                <div className="bg-[linear-gradient(135deg,_#9b7145_0%,_#8ee3ec_50%,_#e0d6cb_100%)] w-[500px] h-[500px] flex items-end justify-center relative pb-12">
+                    <h1 className="text-white italic text-8xl font-cormorant relative" style={{ fontWeight: '400', marginRight: '60px' }}>
+                        home A
+                    </h1>
                 </div>
-                    
-                <div className="pl-10 w-[400px] pt-20 overflow-visible">
-                    <p className="text-gray-500 text-2xl w-[500px]">
+
+                <div className="pl-16 w-[400px] pt-20 overflow-visible">
+                    <p className="text-gray-500 text-xl w-[500px] leading-relaxed" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: '300', letterSpacing: '0.3px' }}>
                         Impressive, unobstructed views: the massive volcano Teide and the coast and ocean all the way to the end of the island. <br /> <br /> It is our most sought-after villa-apartment with its well-designed timeless interior and a minimalistic exterior, including a lava garden, large breakfast terrace, dining area with outdoor kitchen under an architectural pergola and private plunge pool with gorgeous views.
                     </p>
                 </div>

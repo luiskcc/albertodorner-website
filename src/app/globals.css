@@ -15,37 +15,70 @@ html {
     scroll-behavior: smooth;
 }
 
-.pinterest-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 200px;
-    gap: 16px;
-    height: 100vh;
-    width: 100vw;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #a77c3b;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Example: Make some items span more rows/columns for variety */
-  .item-a { grid-row: span 5;}
-  .item-b { grid-row: span 5;}
-  .item-c { grid-column: span 2;}
-  .item-d { grid-row: span 2;}
-  .item-e { grid-row: span 2;}
-  .item-f { grid-row: span 2;}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(4, 150px);  /* 4 rows, each 150px tall */
+  gap: 0.75rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-  /* pinterest style product grid */
+/* Left tall yellow block */
+.grid-yellow {
+  grid-column: 1 / 2;  /* col 1 */
+  grid-row: 1 / 3;     /* spans 2 rows */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left tall pink block */
+.grid-pink {
+  grid-column: 1 / 2;  /* col 1 */
+  grid-row: 3 / 5;     /* spans 2 rows */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Middle tall blue block */
+.grid-blue-tall {
+  grid-column: 2 / 3;  /* col 2 */
+  grid-row: 1 / 4;     /* spans 3 rows */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Middle small square */
+.grid-white {
+  grid-column: 2 / 3;  /* col 2 */
+  grid-row: 4 / 5;     /* spans 2 rows */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Right top wide green block */
+.grid-green {
+  grid-column: 3 / 5;  /* spans 2 cols (3 + 4) */
+  grid-row: 1 / 3;     /* spans 2 rows */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Right bottom left blue */
+.grid-blue-bottom-left {
+  grid-column: 3 / 4;
+  grid-row: 3 / 5;     /* spans 2 rows */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Right bottom right blue */
+.grid-blue-bottom-right {
+  grid-column: 4 / 5;
+  grid-row: 3 / 5;     /* spans 2 rows */
+  position: relative;
+  overflow: hidden;
+}
 
   body {
     background-image: url('/gray-logo-ad.svg');
@@ -56,93 +89,83 @@ html {
 
 
 
-  /* animated book button */
+  /* animated book button - vascular style */
 
   .animated-book-button {
       position: relative;
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 4px;
-      padding: 2px 26px;
-      border: 4px solid;
-      border-color: transparent;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 32px;
+      border: 2px solid #a36e3a;
+      border-radius: 50px;
       font-size: 16px;
-      background-color: inherit;
+      background: linear-gradient(135deg, #a36e3a 0%, #c8915f 100%);
       font-weight: 600;
-      color: rgb(255, 255, 255);
-      box-shadow: 0 0 0 2px #a36e3a;
+      color: white;
       cursor: pointer;
       overflow: hidden;
-      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: all 0.4s ease;
       text-decoration: none;
+      box-shadow: 0 4px 15px rgba(163, 110, 58, 0.3);
   }
-  
+
+  .animated-book-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s ease;
+  }
+
+  .animated-book-button:hover::before {
+      left: 100%;
+  }
+
   .animated-book-button svg {
-      position: absolute;
-      width: 24px;
-      fill: white;
-      z-index: 9;
-      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  .animated-book-button .arr-1 {
-      right: 16px;
-  }
-  
-  .animated-book-button .arr-2 {
-      left: -25%;
-  }
-  
-  .animated-book-button .circle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       width: 20px;
       height: 20px;
-      background-color: #a36e3a;
-      opacity: 0;
-      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      fill: white;
+      transition: transform 0.4s ease;
   }
-  
+
+  .animated-book-button .arr-1 {
+      opacity: 1;
+      transform: translateX(0);
+  }
+
+  .animated-book-button .arr-2 {
+      display: none;
+  }
+
+  .animated-book-button .circle {
+      display: none;
+  }
+
   .animated-book-button .text {
       position: relative;
-      color: rgb(25, 24, 24);
-      z-index: 10;
-      transform: translateX(-12px);
-      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-      font-family: 'ArnoPro', serif;
-  }
-  
-  .animated-book-button:hover {
-      box-shadow: 0 0 0 12px transparent;
       color: white;
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      z-index: 1;
+      transition: all 0.4s ease;
+      font-family: 'ArnoPro', serif;
+      letter-spacing: 0.5px;
   }
-  
-  .animated-book-button:hover .arr-1 {
-      right: -25%;
+
+  .animated-book-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(163, 110, 58, 0.4);
+      background: linear-gradient(135deg, #8d5d33 0%, #a36e3a 100%);
   }
-  
-  .animated-book-button:hover .arr-2 {
-      left: 16px;
-  }
-  
-  .animated-book-button:hover .text {
-      transform: translateX(12px);
-  }
-  
+
   .animated-book-button:hover svg {
-      fill: white;
+      transform: translateX(4px);
   }
-  
+
   .animated-book-button:active {
-      scale: 0.95;
-      box-shadow: 0 0 0 4px #a36e3a;
-  }
-  
-  .animated-book-button:hover .circle {
-      width: 220px;
-      height: 220px;
-      opacity: 1;
+      transform: translateY(0);
+      box-shadow: 0 2px 10px rgba(163, 110, 58, 0.3);
   }

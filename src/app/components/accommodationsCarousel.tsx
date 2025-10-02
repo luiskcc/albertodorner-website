@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const accommodationsImages = [
-    {   
+    {
         id: 1,
         image: "/accommodations-1.png",
         title: "Accommodations",
@@ -39,8 +39,8 @@ export default function AccommodationsCarousel  () {
                                 <div className="flex flex-row gap-4">
                                     <Image src={item.image} alt={item.title} width={900} height={500} className="w-1/2" />
                                     <div className={`w-1/3 px-4 text-start text-white top-0 ${item.style} flex flex-col justify-center`}>
-                                        <p className="text-xl font-bold text-gray-200">{item.title}</p>
-                                        <p className="text-xl font-bold text-gray-200">{item.description}</p>
+                                        <p className="text-xl font-cormorant italic text-gray-200" style={{ fontWeight: '300' }}>{item.title}</p>
+                                        <p className="text-xl text-gray-200" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>{item.description}</p>
                                     </div>
                                 </div>
                             </SwiperSlide>

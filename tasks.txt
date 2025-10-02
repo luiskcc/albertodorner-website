@@ -1,0 +1,123 @@
+Here is an improved, clear, and structured text for feeding to Claude Code, organizing the tasks and phrasing the requests more precisely for website improvements:
+
+***
+
+**Website Improvement Tasks**
+
+1. **Loading Page with Fade Effect**  
+   - Add a loading page to the site featuring a static image that includes the corporate logo and main logo.  
+   - Implement a smooth fade effect for the loading page, so the page content fades in after loading is complete.
+
+2. **Sidebar Background Adjustment**  
+   - The sidebar background should ideally match or closely resemble the main page background, specifically referencing the AD logo background.  
+   - When scrolling, it’s understood the background may no longer match exactly, but the design should retain the same sectional stroke style (more of an insinuated pattern than a fully visible small icon).
+
+3. **Accommodation/Home Section "A"**  
+   - Kay prefers a horizontal carousel for this section, but consider usability and design coherence.  
+   - A vertical carousel may make more sense if it visually distinguishes itself from the previous section (which should be video-based). Vertical movement from top to bottom may reduce confusion and visually separate functional sections.
+
+4. **Buttons and Footer Review**  
+   - Review the design of the buttons and footer.  
+   - The "Book" button header should be redesigned as a vascular (or bascular) button following best practice patterns similar to those described here: [Justinmind UI button patterns](https://www.justinmind.com/es/ui-diseno/ejemplos-de-patrones-de-boton)  
+   - Example button code snippet to be replaced with a vascular button styling:  
+     ```html
+     <div class="absolute inset-0 bg-[#a36e3a] rounded-tl-[40px] rounded-tr-[120px] rounded-br-[40px] rounded-bl-[40px] border border-[#a36e3a] flex flex-col justify-center px-8 py-6 z-10">
+       <span class="text-white italic font-bold text-2xl font-serif">Book</span>
+       <span class="text-white italic text-2xl font-serif leading-tight mt-2">and enjoy<br>your<br>dream</span>
+     </div>
+     ```
+   - This button should mimic a vascular style as well.
+
+5. **Sidebar Typography**  
+   - On the main page, the sidebar font should be cursive and slightly larger.  
+   - It should appear more as a design element rather than just a functional menu.
+
+6. **Grid Alignment**  
+    - Refer to image example @fix-grid.png
+   - Align the bottom edge of the grid perfectly to remove any gaps.  
+   - Center the text labels below each individual image horizontally.
+
+7. **Text Styling Adjustments**  
+   - Modify the main header text:  
+     ```html
+     <h1 class="text-white italic text-8xl font-bold relative top-50 right-20">home A</h1>
+     ```
+     Replace it with the "Minion Variable Concept" font, display style italic, and add slight extra margin to keep it clear of the overlaid box.
+
+   - Body text styling:  
+     Use "Myriad Variable Concept Light SemiExtended" font with existing correct margins. Example:  
+     ```html
+     <p class="text-gray-500 text-2xl w-[500px]">Impressive, unobstructed views: the massive volcano Teide and the coast and ocean all the way to the end of the island. <br><br> It is our most sought-after villa-apartment with its well-designed timeless interior and a minimalistic exterior, including a lava garden, large breakfast terrace, dining area with outdoor kitchen under an architectural pergola and private plunge pool with gorgeous views.</p>
+     ```
+
+   - Moving carousel font:  
+     Use "Minion Variable Concept," display italic style, increase font size by one point, and slightly reduce letter spacing.
+
+8. **Footer Typography**  
+   - Ensure footer headings (`h`s) use the "Minion" font.  
+   - Paragraphs (`p`) and span text in the footer should use the "Myriad" font.
+
+***
+
+This version re-organizes the requests into clear points with actionable instructions and examples, enhancing clarity for coding implementation. If needed, this can be further split into smaller tasks for incremental updates.Here is an improved and organized version of the text for Claude Code to use for website enhancement tasks:
+
+***
+
+**Website Improvement Tasks**
+
+1. Loading Page with Fade Effect  
+- Add a loading page with a static image showing the corporate logo and main logo.  
+- Implement a smooth fade-in effect so the page content appears gracefully after loading.
+
+2. Sidebar Background  
+- Match the sidebar background as closely as possible to the main page’s AD logo background pattern.  
+- When scrolling breaks exact matching, retain the same sectional stroke style, more subtle and implied than a small icon.
+
+3. Accommodation/Home Section A  
+- Kay prefers a horizontal carousel, but consider a vertical carousel to visually differentiate it from the previous section (which is video).  
+- Vertical movement (top to bottom) may reduce confusion since the section behavior differs.
+
+4. Buttons and Footer  
+- Redesign the “Book” button header as a vascular button, following patterns like those at [Justinmind UI button patterns].  
+- Example button snippet should be replaced with a vascular-style button:  
+```html
+<div class="absolute inset-0 bg-[#a36e3a] rounded-tl-[40px] rounded-tr-[120px] rounded-br-[40px] rounded-bl-[40px] border border-[#a36e3a] flex flex-col justify-center px-8 py-6 z-10">
+  <span class="text-white italic font-bold text-2xl font-serif">Book</span>
+  <span class="text-white italic text-2xl font-serif leading-tight mt-2">and enjoy<br>your<br>dream</span>
+</div>
+```
+
+5. Sidebar Typography  
+- Use a cursive font style for the sidebar on the main page, slightly larger than default.  
+- Design it as an artistic element, not just a menu.
+
+6. Grid Alignment  
+- Align the bottom edge of the grid to remove gaps.  
+- Center the text labels under each individual image horizontally.
+
+7. Text Styling  
+- For the main header:  
+```html
+<h1 class="text-white italic text-8xl font-bold relative top-50 right-20">home A</h1>
+```
+  Replace with “Minion Variable Concept” font, italic display, with a little more margin separating it from the overlay box.
+
+- For body text:  
+Use “Myriad Variable Concept Light SemiExtended” font with existing margins. Example paragraph:  
+```html
+<p class="text-gray-500 text-2xl w-[500px]">
+  Impressive, unobstructed views: the massive volcano Teide and the coast and ocean all the way to the end of the island.<br><br>
+  It is our most sought-after villa-apartment with its well-designed timeless interior and a minimalistic exterior, including a lava garden, large breakfast terrace, dining area with outdoor kitchen under an architectural pergola and private plunge pool with gorgeous views.
+</p>
+```
+
+- For the moving carousel text:  
+Use “Minion Variable Concept,” italic display, increase font size by one point, and slightly reduce letter spacing.
+
+8. Footer Typography  
+- Headings (`h`s) in the footer should use the “Minion” font.  
+- Paragraphs and spans should use the “Myriad” font.
+
+***
+
+9. Please optimize the Blog section. Based on this example and mantaininng the overall flow and style of the website

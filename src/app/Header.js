@@ -15,22 +15,22 @@ export default function Header() {
                     <div className="hidden md:flex items-center space-x-8">
                         {/* Dropdown Example */}
                         <div className="relative group">
-                            <Link href="/adboutiquevillas/accommodations" className="font-arnoPro hover:text-gray-300 transition-colors">
+                            <Link href="/adboutiquevillas/accommodations" className="font-arnoPro text-[#a36e3a] hover:text-[#8d5d33] transition-colors">
                                 Villas
                             </Link>
                         </div>
                         <div className="relative group">
-                            <Link href="/adboatrental/" className="hover:text-gray-300 transition-colors">
+                            <Link href="/adboatrental/" className="text-[#a36e3a] hover:text-[#8d5d33] transition-colors">
                                 Boats
                             </Link>
                         </div>
 
-                        <Link href="/caradventures/" className="hover:text-gray-300 transition-colors">
-                            Cars
+                        <Link href="/caradventures/" className="text-[#a36e3a] hover:text-[#8d5d33] transition-colors">
+                            Motorbikes
                         </Link>
                         {/* Dropdown Example */}
                         <div className="relative group">
-                            <Link href="/professionals/" className="animated-button" style={{ padding: '7px 12px' }}>
+                            <Link href="/professionals/" className="text-[#a36e3a] hover:text-[#8d5d33] transition-colors" style={{ padding: '7px 12px' }}>
                                 About
                             </Link>
                         </div>

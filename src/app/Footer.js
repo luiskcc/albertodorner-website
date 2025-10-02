@@ -6,11 +6,11 @@ export default function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Contact Us */}
         <div>
-          <h3 className="font-bold mb-4">CONTACT US</h3>
-          <div className="mb-2">
+          <h3 className="font-bold mb-4 font-cormorant text-lg" style={{ letterSpacing: '0.5px' }}>CONTACT US</h3>
+          <div className="mb-2" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px' }}>
             <span className="font-semibold">Reservations</span> · <a href="tel:08000770804" className="underline">0800 077 0804</a>
           </div>
-          <div className="mb-4">
+          <div className="mb-4" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px' }}>
             <span className="font-semibold">Address</span> · Wogan House, 99 Great Portland Street, London, W1W 7NY
           </div>
           <Link href="/booknow/" className="animated-book-button">
@@ -23,8 +23,8 @@ export default function Footer() {
                                 <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                             </svg>
               </Link>
-          <div className="font-semibold mb-2 mt-6">SHARE YOUR FEEDBACK</div>
-          <div className="font-semibold mb-2">FOLLOW US</div>
+          <div className="font-semibold mb-2 mt-6 font-cormorant" style={{ fontSize: '14px', letterSpacing: '0.5px' }}>SHARE YOUR FEEDBACK</div>
+          <div className="font-semibold mb-2 font-cormorant" style={{ fontSize: '14px', letterSpacing: '0.5px' }}>FOLLOW US</div>
           <div className="flex space-x-4 text-2xl">
             <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg fill="currentColor text-[#a36e3a]" viewBox="0 0 24 24" className="w-6 h-6"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.13.62a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z"/></svg>
@@ -41,8 +41,8 @@ export default function Footer() {
         </div>
         {/* Explore Our World */}
         <div>
-          <h3 className="font-bold mb-4">EXPLORE OUR WORLD</h3>
-          <ul className="space-y-2">
+          <h3 className="font-bold mb-4 font-cormorant text-lg" style={{ letterSpacing: '0.5px' }}>EXPLORE OUR WORLD</h3>
+          <ul className="space-y-2" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px' }}>
             <li><Link href="/adboutiquevillas" className="hover:underline text-[#a36e3a]">Villas</Link></li>
             <li><Link href="/adboatrental" className="hover:underline text-[#a36e3a]">Boats</Link></li>
             <li><Link href="/caradventures" className="hover:underline text-[#a36e3a]">Cars</Link></li>
@@ -53,8 +53,8 @@ export default function Footer() {
         </div>
         {/* Join Our Family */}
         <div>
-          <h3 className="font-bold mb-4">JOIN OUR FAMILY</h3>
-          <ul className="space-y-2">
+          <h3 className="font-bold mb-4 font-cormorant text-lg" style={{ letterSpacing: '0.5px' }}>JOIN OUR FAMILY</h3>
+          <ul className="space-y-2" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px' }}>
             <li><a href="#" className="hover:underline">Travel professionals <span aria-label="external" className="inline-block"></span></a></li>
             <li><a href="#" className="hover:underline">Event planners <span aria-label="external" className="inline-block"></span></a></li>
             <li><a href="#" className="hover:underline">Media hub <span aria-label="external" className="inline-block"></span></a></li>
@@ -65,13 +65,13 @@ export default function Footer() {
         </div>
         {/* Newsletter Signup */}
         <div>
-          <h3 className="font-bold mb-4">SIGN UP FOR EXCLUSIVE NEWS, TRAVEL INSPIRATION AND OFFERS</h3>
+          <h3 className="font-bold mb-4 font-cormorant text-lg" style={{ letterSpacing: '0.5px' }}>SIGN UP FOR EXCLUSIVE NEWS, TRAVEL INSPIRATION AND OFFERS</h3>
           <form className="space-y-2">
             <div className="flex flex-col gap-2">
               <input type="text" placeholder="First name" className="border-b border-gray-300 flex-1 px-2 py-1 bg-transparent focus:outline-none" />
             </div>
             <input type="email" placeholder="Enter email address" className="border-b border-gray-300 w-full px-2 py-1 bg-transparent focus:outline-none" />
-            <p className="text-xs text-gray-500 mt-2">
+            <p className="text-xs text-gray-500 mt-2" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
               I would like to be kept updated on exclusive news, travel inspiration and offers from the legendary world of albertodorner, and receive tailored communications based on my interests and circumstances. To learn more about how we store and process your data please visit our <a href="#" className="underline">Privacy Policy</a>. You may opt out of receiving our updates at any time, either by using an unsubscribe link or by contacting us at unsubscribe@albertodorner.com.
             </p>
             <Link href="/booknow/" className="animated-book-button">
@@ -87,8 +87,8 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="container mx-auto px-4 mt-12 text-xs text-gray-500 border-t border-gray-200 pt-6">
-        <span className="font-semibold">Copyright albertodorner Management Limited 2025.</span> All copyright and other intellectual property rights in all logos, designs, text, images and other materials on this website are owned by albertodorner Management Limited or appear with permission of the relevant owner. &apos;albertodorner&apos; is a registered trade mark. All rights reserved.
+      <div className="container mx-auto px-4 mt-12 text-xs text-gray-500 border-t border-gray-200 pt-6" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+        <span className="font-semibold font-cormorant">Copyright albertodorner Management Limited 2025.</span> All copyright and other intellectual property rights in all logos, designs, text, images and other materials on this website are owned by albertodorner Management Limited or appear with permission of the relevant owner. &apos;albertodorner&apos; is a registered trade mark. All rights reserved.
       </div>
     </footer>
   );

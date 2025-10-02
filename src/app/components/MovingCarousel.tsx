@@ -11,7 +11,8 @@ export default function MovingCarousel() {
           {amenities.map((amenity, index) => (
             <div
               key={`first-${index}`}
-              className="inline-flex items-center px-8 mx-4 text-2xl md:text-3xl lg:text-4xl font-serif text-[#a36e3a] italic"
+              className="inline-flex items-center px-8 mx-4 text-3xl md:text-4xl lg:text-5xl font-cormorant text-[#a36e3a] italic"
+              style={{ letterSpacing: '-0.5px' }}
             >
               {amenity}
             </div>
@@ -20,7 +21,8 @@ export default function MovingCarousel() {
           {amenities.map((amenity, index) => (
             <div
               key={`second-${index}`}
-              className="inline-flex items-center px-8 mx-4 text-2xl md:text-3xl lg:text-4xl font-serif text-[#a36e3a] italic"
+              className="inline-flex items-center px-8 mx-4 text-3xl md:text-4xl lg:text-5xl font-cormorant text-[#a36e3a] italic"
+              style={{ letterSpacing: '-0.5px' }}
             >
               {amenity}
             </div>
@@ -37,7 +39,7 @@ export default function MovingCarousel() {
             transform: translateX(-50%);
           }
         }
-        
+
         .animate-scroll {
           animation: scroll 20s linear infinite;
         }
