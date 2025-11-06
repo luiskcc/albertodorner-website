@@ -1,8 +1,17 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+    const pathname = usePathname();
+
+    // Helper function to check if link is active
+    const isActive = (path) => {
+        if (path === "/") return pathname === "/";
+        return pathname.startsWith(path);
+    };
+
     return (
         <header className="text-black shadow-md fixed top-0 left-0 w-full z-50 bg-white">
             <nav className="container mx-auto px-4 py-4">
@@ -10,27 +19,56 @@ export default function Header() {
                     <Link href="/" className="font-bold font-black flex items-center">
                         <Image src="/Isotipo-marron.svg" alt="logo" width={100} height={100} />
                     </Link>
-                    
+
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-8">
                         {/* Dropdown Example */}
                         <div className="relative group">
-                            <Link href="/adboutiquevillas/accommodations" className="font-arnoPro text-[#a36e3a] hover:text-[#8d5d33] transition-colors">
+                            <Link
+                                href="/adboutiquevillas/accommodations"
+                                className={`font-arnoPro transition-colors ${
+                                    isActive("/adboutiquevillas")
+                                        ? "text-[#a36e3a]"
+                                        : "text-gray-600 hover:text-[#a36e3a]"
+                                }`}
+                            >
                                 Villas
                             </Link>
                         </div>
                         <div className="relative group">
-                            <Link href="/adboatrental/" className="text-[#a36e3a] hover:text-[#8d5d33] transition-colors">
+                            <Link
+                                href="/adboatrental/"
+                                className={`transition-colors ${
+                                    isActive("/adboatrental")
+                                        ? "text-[#a36e3a]"
+                                        : "text-gray-600 hover:text-[#a36e3a]"
+                                }`}
+                            >
                                 Boats
                             </Link>
                         </div>
 
-                        <Link href="/caradventures/" className="text-[#a36e3a] hover:text-[#8d5d33] transition-colors">
+                        <Link
+                            href="/caradventures/"
+                            className={`transition-colors ${
+                                isActive("/caradventures")
+                                    ? "text-[#a36e3a]"
+                                    : "text-gray-600 hover:text-[#a36e3a]"
+                            }`}
+                        >
                             Motorbikes
                         </Link>
                         {/* Dropdown Example */}
                         <div className="relative group">
-                            <Link href="/professionals/" className="text-[#a36e3a] hover:text-[#8d5d33] transition-colors" style={{ padding: '7px 12px' }}>
+                            <Link
+                                href="/professionals/"
+                                className={`transition-colors ${
+                                    isActive("/professionals")
+                                        ? "text-[#a36e3a]"
+                                        : "text-gray-600 hover:text-[#a36e3a]"
+                                }`}
+                                style={{ padding: '7px 12px' }}
+                            >
                                 About
                             </Link>
                         </div>

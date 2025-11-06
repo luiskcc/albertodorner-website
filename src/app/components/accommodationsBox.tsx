@@ -27,7 +27,18 @@ export default function AccommodationsBox() {
     return (
         <div className="flex flex-col p-10">
             <div className="flex flex-row justify-center items-end mt-20">
-                <Image src="/DJI_0285_1-1.jpg" alt="bedroom" width={500} height={500}/>
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    width={500}
+                    height={500}
+                    className="object-cover"
+                    style={{ width: '500px', height: '500px' }}
+                >
+                    <source src="/home-a-accommodation.mp4" type="video/mp4" />
+                </video>
                 <Swiper
                     modules={[Autoplay, Pagination, Navigation]}
                     direction="vertical"
