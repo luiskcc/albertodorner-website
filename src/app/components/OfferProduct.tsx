@@ -18,16 +18,15 @@ export default function OfferProduct() {
                         <span className="text-[#a36e3a] text-xl font-serif">2 bathrooms</span>
                     </div>
                 </div>
-                <a href="/booknow" className="relative w-[130px] h-[130px] block group cursor-pointer transition-all duration-300 hover:scale-105">
-                    {/* Main brown shape */}
-                    <div className="absolute inset-0 bg-[#a36e3a] rounded-tl-[20px] rounded-tr-[60px] rounded-br-[20px] rounded-bl-[20px] border-2 border-[#a36e3a] flex flex-col justify-center px-4 py-3 z-10 transition-all duration-300 group-hover:bg-[#8d5d33] group-hover:shadow-[4px_4px_0px_0px_rgba(163,110,58,0.3)]">
-                        <span className="text-white italic font-bold text-lg font-serif">Book</span>
-                        <span className="text-white italic text-sm font-serif leading-tight mt-1">
-                        and enjoy<br />your<br />dream
-                        </span>
-                    </div>
-                    {/* White background with border - shadow layer */}
-                    <div className="absolute top-1 left-1 inset-0 border-2 border-[#a36e3a] rounded-[16px] bg-white z-0 transition-all duration-300"></div>
+                <a href="/booknow" className="animated-book-button">
+                    <div className="circle"></div>
+                    <svg className="arr-2" viewBox="0 0 24 24">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                    <span className="text font-thin">Book Your Dream</span>
+                    <svg className="arr-1" viewBox="0 0 24 24">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
                 </a>
             </div>
         </div>

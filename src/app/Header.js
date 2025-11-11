@@ -26,7 +26,7 @@ export default function Header() {
                         </div>
 
                         <Link href="/caradventures/" className="text-[#a36e3a] hover:text-[#8d5d33] transition-colors">
-                            Motorbikes
+                            Jetskies
                         </Link>
                         {/* Dropdown Example */}
                         <div className="relative group">

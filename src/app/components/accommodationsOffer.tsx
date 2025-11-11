@@ -2,59 +2,48 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function AccommodationsOffer() {
+    const [hoveredApartment, setHoveredApartment] = useState<string | null>(null);
+
+    const apartments = [
+        { id: "A", href: "/adboutiquevillas/accommodations/apartment-a", image: "/DJI_0285_1-1.jpg", videoId: "-Lx_4ETfQ0A", gridClass: "grid-yellow" },
+        { id: "B", href: "/adboutiquevillas/accommodations/apartment-b", image: "/Apartment_B_interior_06 copy.jpg", videoId: "lpE8VMwSitQ", gridClass: "grid-pink" },
+        { id: "C", href: "/adboutiquevillas/accommodations/apartment-c", image: "/adboutiquevillas_3.png", videoId: "amFUPT2tZ5I", gridClass: "grid-blue-tall" },
+        { id: "D", href: "/adboutiquevillas/accommodations/apartment-d", image: "/DCC_6248.jpg", videoId: "rSthcBfapS4", gridClass: "grid-white" },
+        { id: "E", href: "/adboutiquevillas/accommodations/apartment-e", image: "/Apartment_G_terrace_02.jpg", videoId: "", gridClass: "grid-green" },
+        { id: "F", href: "/adboutiquevillas/accommodations/apartment-f", image: "/03.jpg", videoId: "", gridClass: "grid-blue-bottom-left" },
+        { id: "G", href: "/adboutiquevillas/accommodations/apartment-g", image: "/Apartment_C_exterior_10 copy.jpg", videoId: "E5_EHtpRsRk", gridClass: "grid-blue-bottom-right" },
+    ];
+
     return (
         <div className="w-full py-16 px-4 md:px-8" id="accommodations-offer">
             <div className="grid-container">
-                <Link href="/adboutiquevillas/accommodations/apartment-a" className="grid-yellow group">
-                    <Image src="/DJI_0285_1-1.jpg" alt="Apartment A" fill style={{objectFit:"cover"}} className="transition-transform duration-300 group-hover:scale-110" />
-                    <div className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg z-10 transition-all duration-300 group-hover:scale-110">
-                        <span className="font-cormorant italic text-xl text-[#a36e3a]">A</span>
-                    </div>
-                </Link>
-
-                <Link href="/adboutiquevillas/accommodations/apartment-b" className="grid-pink group">
-                    <Image src="/Apartment_B_interior_06 copy.jpg" alt="Apartment B" fill style={{objectFit:"cover"}} className="transition-transform duration-300 group-hover:scale-110" />
-                    <div className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg z-10 transition-all duration-300 group-hover:scale-110">
-                        <span className="font-cormorant italic text-xl text-[#a36e3a]">B</span>
-                    </div>
-                </Link>
-
-                <Link href="/adboutiquevillas/accommodations/apartment-c" className="grid-blue-tall group">
-                    <Image src="/adboutiquevillas_3.png" alt="Apartment C" fill style={{objectFit:"cover"}} className="transition-transform duration-300 group-hover:scale-110" />
-                    <div className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg z-10 transition-all duration-300 group-hover:scale-110">
-                        <span className="font-cormorant italic text-xl text-[#a36e3a]">C</span>
-                    </div>
-                </Link>
-
-                <Link href="/adboutiquevillas/accommodations/apartment-d" className="grid-white group">
-                    <Image src="/DCC_6248.jpg" alt="Apartment D" fill style={{objectFit:"cover"}} className="transition-transform duration-300 group-hover:scale-110" />
-                    <div className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg z-10 transition-all duration-300 group-hover:scale-110">
-                        <span className="font-cormorant italic text-xl text-[#a36e3a]">D</span>
-                    </div>
-                </Link>
-
-                <Link href="/adboutiquevillas/accommodations/apartment-e" className="grid-green group">
-                    <Image src="/Apartment_G_terrace_02.jpg" alt="Apartment E" fill style={{objectFit:"cover"}} className="transition-transform duration-300 group-hover:scale-110" />
-                    <div className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg z-10 transition-all duration-300 group-hover:scale-110">
-                        <span className="font-cormorant italic text-xl text-[#a36e3a]">E</span>
-                    </div>
-                </Link>
-
-                <Link href="/adboutiquevillas/accommodations/apartment-f" className="grid-blue-bottom-left group">
-                    <Image src="/03.jpg" alt="Apartment F" fill style={{objectFit:"cover"}} className="transition-transform duration-300 group-hover:scale-110" />
-                    <div className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg z-10 transition-all duration-300 group-hover:scale-110">
-                        <span className="font-cormorant italic text-xl text-[#a36e3a]">F</span>
-                    </div>
-                </Link>
-
-                <Link href="/adboutiquevillas/accommodations/apartment-g" className="grid-blue-bottom-right group">
-                    <Image src="/Apartment_C_exterior_10 copy.jpg" alt="Apartment G" fill style={{objectFit:"cover"}} className="transition-transform duration-300 group-hover:scale-110" />
-                    <div className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg z-10 transition-all duration-300 group-hover:scale-110">
-                        <span className="font-cormorant italic text-xl text-[#a36e3a]">G</span>
-                    </div>
-                </Link>
+                {apartments.map((apartment) => (
+                    <Link
+                        key={apartment.id}
+                        href={apartment.href}
+                        className={`${apartment.gridClass} group relative overflow-hidden`}
+                        onMouseEnter={() => setHoveredApartment(apartment.id)}
+                        onMouseLeave={() => setHoveredApartment(null)}
+                    >
+                        {hoveredApartment === apartment.id && apartment.videoId ? (
+                            <iframe
+                                src={`https://www.youtube.com/embed/${apartment.videoId}?autoplay=1&mute=1&loop=1&playlist=${apartment.videoId}&controls=0&showinfo=0&rel=0&modestbranding=1`}
+                                title={`Apartment ${apartment.id} Video`}
+                                className="absolute inset-0 w-full h-full object-cover"
+                                allow="autoplay; encrypted-media"
+                                style={{ border: 'none', pointerEvents: 'none' }}
+                            />
+                        ) : (
+                            <Image src={apartment.image} alt={`Apartment ${apartment.id}`} fill style={{objectFit:"cover"}} className="transition-transform duration-300 group-hover:scale-110" />
+                        )}
+                        <div className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg z-10 transition-all duration-300 group-hover:scale-110">
+                            <span className="font-cormorant italic text-xl text-[#a36e3a]">{apartment.id}</span>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </div>
     )

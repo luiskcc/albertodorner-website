@@ -7,9 +7,9 @@ export default function HomeSelection() {
             <div className="grid grid-cols-12 gap-8">
                 {/* Large pool image */}
                 <div className="col-span-12 md:col-span-7 relative">
-                    <Image 
+                    <Image
                         src="/adboutiquevillas_1.png"
-                        alt="Luxury pool view" 
+                        alt="Luxury pool view"
                         width={800}
                         height={600}
                         className="w-full h-[600px] object-cover rounded-lg"
@@ -20,9 +20,9 @@ export default function HomeSelection() {
                 <div className="col-span-12 md:col-span-5 space-y-6">
                     {/* Bedroom image */}
                     <div className="relative h-[300px]">
-                        <Image 
+                        <Image
                             src="/adboutiquevillas_2.png"
-                            alt="Luxury bedroom" 
+                            alt="Luxury bedroom"
                             width={500}
                             height={300}
                             className="w-full h-full object-cover rounded-lg"
