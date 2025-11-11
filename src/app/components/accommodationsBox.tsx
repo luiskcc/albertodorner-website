@@ -13,7 +13,6 @@ interface AccommodationsBoxProps {
     title?: string;
     description?: string;
     gradientClass?: string;
-    enableVideoHoverPreview?: boolean; // New prop to control video hover behavior
 }
 
 const defaultImages = [
@@ -35,12 +34,9 @@ export default function AccommodationsBox({
     carouselImages = defaultImages,
     title = "home A",
     description = "Impressive, unobstructed views: the massive volcano Teide and the coast and ocean all the way to the end of the island. <br /> <br /> It is our most sought-after villa-apartment with its well-designed timeless interior and a minimalistic exterior, including a lava garden, large breakfast terrace, dining area with outdoor kitchen under an architectural pergola and private plunge pool with gorgeous views.",
-    gradientClass = "bg-[linear-gradient(135deg,_#9b7145_0%,_#8ee3ec_50%,_#e0d6cb_100%)]",
-    enableVideoHoverPreview = false // Default to false - only modal on click
+    gradientClass = "bg-[linear-gradient(135deg,_#9b7145_0%,_#8ee3ec_50%,_#e0d6cb_100%)]"
 }: AccommodationsBoxProps) {
-    const [isVideoHovered, setIsVideoHovered] = useState(false);
     const [isCarouselHovered, setIsCarouselHovered] = useState(false);
-    const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
     const [isCarouselModalOpen, setIsCarouselModalOpen] = useState(false);
     const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0);
     const [isLeftImageHovered, setIsLeftImageHovered] = useState(false);
