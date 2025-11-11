@@ -119,32 +119,6 @@ export default function AccommodationsBox({
                 </div>
             </div>
 
-            {/* Video Modal */}
-            {isVideoModalOpen && videoId && (
-                <div
-                    className="fixed inset-0 bg-white bg-opacity-95 z-50 flex items-center justify-center p-4"
-                    onClick={() => setIsVideoModalOpen(false)}
-                >
-                    <div className="relative w-full max-w-6xl aspect-video">
-                        <button
-                            onClick={() => setIsVideoModalOpen(false)}
-                            className="absolute -top-12 right-0 text-gray-600 text-4xl hover:text-gray-800 transition-colors"
-                            aria-label="Close modal"
-                        >
-                            ×
-                        </button>
-                        <iframe
-                            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&rel=0&modestbranding=1`}
-                            title="Property Video Extended"
-                            className="w-full h-full"
-                            allow="autoplay; encrypted-media"
-                            allowFullScreen
-                            style={{ border: 'none' }}
-                        />
-                    </div>
-                </div>
-            )}
-
             {/* Carousel Modal */}
             {isCarouselModalOpen && (
                 <div
