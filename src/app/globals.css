@@ -18,9 +18,9 @@ html {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-template-rows: repeat(4, 150px);  /* 4 rows, each 150px tall */
+  grid-template-rows: repeat(4, 200px);  /* 4 rows, each 200px tall */
   gap: 0.75rem;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -96,10 +96,10 @@ html {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      padding: 12px 32px;
+      gap: 6px;
+      padding: 8px 20px;
       border: 2px solid #a36e3a;
-      border-radius: 50px;
+      border-radius: 0;
       font-size: 16px;
       background: linear-gradient(135deg, #a36e3a 0%, #c8915f 100%);
       font-weight: 600;
@@ -127,8 +127,8 @@ html {
   }
 
   .animated-book-button svg {
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
       fill: white;
       transition: transform 0.4s ease;
   }

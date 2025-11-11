@@ -38,19 +38,15 @@ export default function AccommodationsCarousel  () {
                             <SwiperSlide key={item.id}>
                                 <div className="flex flex-row gap-4">
                                     <Image src={item.image} alt={item.title} width={900} height={500} className="w-1/2" />
-                                    <div className={`w-1/3 px-4 text-start text-white top-0 ${item.style} flex flex-col justify-center`}>
-                                        <p className="text-xl font-cormorant italic text-gray-200" style={{ fontWeight: '300' }}>{item.title}</p>
-                                        <p className="text-xl text-gray-200" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>{item.description}</p>
+                                    <div className={`w-1/3 px-8 text-start text-white top-0 ${item.style} flex flex-col justify-center space-y-4`}>
+                                        <h2 className="font-cormorant text-4xl italic text-white" style={{ fontWeight: '300', letterSpacing: '0.5px' }}>{item.title}</h2>
+                                        <p className="text-gray-100 leading-relaxed" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '15px' }}>{item.description}</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
-            <div className="flex justify-center pr-40 mb-40">
-                <a href="#accommodations-offer" className="hover:scale-110 transition-all duration-300">
-                    <Image src="/arrow-scroll.svg" alt="arrow-down" width={100} height={100} />
-                </a>
-            </div>
+            <div className="mb-40"></div>
             </div>
         </div>
     )

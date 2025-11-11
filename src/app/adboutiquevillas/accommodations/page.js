@@ -9,10 +9,10 @@ export default function Accommodations() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center">
             <Header />
-            <Hero />
+            <Hero videoUrl="i-tw33cL8Pk" />
             <SideBar />
-            <AccommodationsCarousel />
             <AccommodationsOffer id="accommodations-offer" />
+            <AccommodationsCarousel />
             <Footer />
         </div>
     );

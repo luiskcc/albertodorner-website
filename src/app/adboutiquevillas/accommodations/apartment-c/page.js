@@ -5,27 +5,14 @@ import AccommodationsBox from "../../../components/accommodationsBox"
 import SideBarProduct from "@/app/components/sideBarProduct"
 import OfferProduct from "@/app/components/OfferProduct"
 
-const carouselImagesA = [
-    {
-        id: 1,
-        image: "/adboutiquevillas_1.png",
-        title: "Pool Area",
-    },
-    {
-        id: 2,
-        image: "/DCC_6248.jpg",
-        title: "Interior",
-    },
-]
-
-export default function AccommodationsApartmentA() {
+export default function AccommodationsApartmentC() {
     return (
         <div className="flex flex-col items-center justify-center">
             <Header />
             <SideBarProduct />
             <AccommodationsBox
-                videoId="-Lx_4ETfQ0A"
-                carouselImages={carouselImagesA}
+                videoId="amFUPT2tZ5I"
+                title="home C"
             />
             <MovingCarousel/>
             <OfferProduct/>

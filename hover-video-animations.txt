@@ -1,0 +1,21 @@
+- Okay I have this list of videos that belong to the properties
+
+Property A https://www.youtube.com/watch?v=-Lx_4ETfQ0A
+Property B https://www.youtube.com/watch?v=lpE8VMwSitQ
+Property C https://www.youtube.com/watch?v=amFUPT2tZ5I
+Property D https://www.youtube.com/watch?v=rSthcBfapS4
+Property G https://www.youtube.com/watch?v=E5_EHtpRsRk
+Property H https://www.youtube.com/watch?v=wulbAyd3Ku4
+Property I https://www.youtube.com/watch?v=vnQfycoPA2c
+
+
+- Add a hover effect to the images for when the video plays.
+
+
+In section apartment-a for instance 
+
+-Añadir efecto hover en videos e imágenes
+	•	Un video corto en loop y el carrusel de fotos  se activan al pasar el cursor (hover)
+	•	Cuando se hace clic sobre video o carrusel se amplía. El video además es versión más extendida. (modo modal):
+
+
