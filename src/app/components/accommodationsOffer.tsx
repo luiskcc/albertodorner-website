@@ -9,12 +9,12 @@ export default function AccommodationsOffer() {
 
     const apartments = [
         { id: "A", href: "/adboutiquevillas/accommodations/apartment-a", image: "/DJI_0285_1-1.jpg", videoId: "-Lx_4ETfQ0A", gridClass: "grid-yellow" },
-        { id: "B", href: "/adboutiquevillas/accommodations/apartment-b", image: "/Apartment_B_interior_06 copy.jpg", videoId: "lpE8VMwSitQ", gridClass: "grid-pink" },
-        { id: "C", href: "/adboutiquevillas/accommodations/apartment-c", image: "/adboutiquevillas_3.png", videoId: "amFUPT2tZ5I", gridClass: "grid-blue-tall" },
-        { id: "D", href: "/adboutiquevillas/accommodations/apartment-d", image: "/DCC_6248.jpg", videoId: "rSthcBfapS4", gridClass: "grid-white" },
-        { id: "E", href: "/adboutiquevillas/accommodations/apartment-e", image: "/Apartment_G_terrace_02.jpg", videoId: "", gridClass: "grid-green" },
-        { id: "F", href: "/adboutiquevillas/accommodations/apartment-f", image: "/03.jpg", videoId: "", gridClass: "grid-blue-bottom-left" },
-        { id: "G", href: "/adboutiquevillas/accommodations/apartment-g", image: "/Apartment_C_exterior_10 copy.jpg", videoId: "E5_EHtpRsRk", gridClass: "grid-blue-bottom-right" },
+        { id: "D", href: "/adboutiquevillas/accommodations/apartment-b", image: "/Apartment_B_interior_06 copy.jpg", videoId: "lpE8VMwSitQ", gridClass: "grid-pink" },
+        { id: "B", href: "/adboutiquevillas/accommodations/apartment-c", image: "/adboutiquevillas_3.png", videoId: "amFUPT2tZ5I", gridClass: "grid-blue-tall" },
+        { id: "G", href: "/adboutiquevillas/accommodations/apartment-d", image: "/DCC_6248.jpg", videoId: "rSthcBfapS4", gridClass: "grid-white" },
+        { id: "C", href: "/adboutiquevillas/accommodations/apartment-g", image: "/Apartment_G_terrace_02.jpg", videoId: "", gridClass: "grid-green" },
+        { id: "H", href: "/adboutiquevillas/accommodations/apartment-h", image: "/03.jpg", videoId: "", gridClass: "grid-blue-bottom-left" },
+        { id: "I", href: "/adboutiquevillas/accommodations/apartment-i", image: "/Apartment_C_exterior_10 copy.jpg", videoId: "E5_EHtpRsRk", gridClass: "grid-blue-bottom-right" },
     ];
 
     return (

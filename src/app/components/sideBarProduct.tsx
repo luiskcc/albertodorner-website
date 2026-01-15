@@ -29,6 +29,9 @@ export default function SideBarProduct() {
                         <Link href="/adboutiquevillas/accommodations" className={`font-cormorant italic text-4xl mb-8 transition-all duration-300 hover:scale-105 ${pathname.startsWith('/adboutiquevillas/accommodations') ? 'text-[#a36e3a]' : 'text-gray-800'}`} style={{ fontWeight: '300', letterSpacing: '1px' }}>
                             Accommodations
                         </Link>
+                        <Link href="/adboutiquevillas/services" className={`font-cormorant italic text-4xl mb-8 transition-all duration-300 hover:scale-105 ${pathname.startsWith('/adboutiquevillas/accommodations') ? 'text-[#a36e3a]' : 'text-gray-800'}`} style={{ fontWeight: '300', letterSpacing: '1px' }}>
+                            Services
+                        </Link>
                         <Link href="/adboutiquevillas/blog" className={`font-cormorant italic text-4xl mb-8 transition-all duration-300 hover:scale-105 ${pathname.startsWith('/adboutiquevillas/blog') ? 'text-[#a36e3a]' : 'text-gray-800'}`} style={{ fontWeight: '300', letterSpacing: '1px' }}>
                             Blog
                         </Link>

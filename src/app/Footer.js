@@ -8,10 +8,13 @@ export default function Footer() {
         <div>
           <h3 className="font-bold mb-4 font-cormorant text-lg" style={{ letterSpacing: '0.5px' }}>CONTACT US</h3>
           <div className="mb-2" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px' }}>
-            <span className="font-semibold">Reservations</span> · <a href="tel:08000770804" className="underline">0800 077 0804</a>
+            <span className="font-semibold">Phone</span> · <a href="tel:+34638611651" className="underline">+34 638 611 651</a>
+          </div>
+          <div className="mb-2" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px' }}>
+            <span className="font-semibold">Email</span> · <a href="mailto:reservations@albertodorner.com" className="underline">reservations@albertodorner.com</a>
           </div>
           <div className="mb-4" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px' }}>
-            <span className="font-semibold">Address</span> · Wogan House, 99 Great Portland Street, London, W1W 7NY
+            <span className="font-semibold">Address</span> · Playa del Socorro Nº 1-2, Los Realejos, Tenerife
           </div>
           <Link href="/booknow/" className="animated-book-button">
                             <div className="circle"></div>
