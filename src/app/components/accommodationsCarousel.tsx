@@ -30,7 +30,11 @@ export default function AccommodationsCarousel  () {
                         modules={[Autoplay, Pagination, Navigation]}
                         spaceBetween={0}
                         slidesPerView={1}
-                        autoplay={{ delay: 5000, disableOnInteraction: false }}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
+                        loop={true}
                         speed={2000}
                         className="w-400"
                     >

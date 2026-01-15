@@ -2,7 +2,7 @@
 import Header from "../../Header";
 import Footer from "../../Footer";
 import Hero from "../../components/HeroBlog";
-import SideBarProduct from "../../components/sideBarProduct";
+import SideBar from "../../components/sideBar";
 
 
 export default function Blog() {
@@ -10,7 +10,7 @@ export default function Blog() {
         <div>
             <Header />
             <Hero />
-            <SideBarProduct />
+            <SideBar/>
             <Footer />
         </div>
     )
