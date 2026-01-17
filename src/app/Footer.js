@@ -17,14 +17,13 @@ export default function Footer() {
             <span className="font-semibold">Address</span> · Playa del Socorro Nº 1-2, Los Realejos, Tenerife
           </div>
           <Link href="/booknow/" className="animated-book-button">
-                            <div className="circle"></div>
-                            <svg className="arr-2" viewBox="0 0 24 24">
-                                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                            </svg>
-                            <span className="text font-thin">Contact Us</span>
-                            <svg className="arr-1" viewBox="0 0 24 24">
-                                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                            </svg>
+                <span className="button-bg">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </span>
+                <span className="button-text">Contact Us</span>
+                <span className="button-spacer">Contact Us</span>
               </Link>
           <div className="font-semibold mb-2 mt-6 font-cormorant" style={{ fontSize: '14px', letterSpacing: '0.5px' }}>SHARE YOUR FEEDBACK</div>
           <div className="font-semibold mb-2 font-cormorant" style={{ fontSize: '14px', letterSpacing: '0.5px' }}>FOLLOW US</div>
@@ -78,14 +77,13 @@ export default function Footer() {
               I would like to be kept updated on exclusive news, travel inspiration and offers from the legendary world of albertodorner, and receive tailored communications based on my interests and circumstances. To learn more about how we store and process your data please visit our <a href="#" className="underline">Privacy Policy</a>. You may opt out of receiving our updates at any time, either by using an unsubscribe link or by contacting us at unsubscribe@albertodorner.com.
             </p>
             <Link href="/booknow/" className="animated-book-button">
-                            <div className="circle"></div>
-                            <svg className="arr-2" viewBox="0 0 24 24">
-                                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                            </svg>
-                            <span className="text font-thin">Sign Up</span>
-                            <svg className="arr-1" viewBox="0 0 24 24">
-                                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                            </svg>
+                <span className="button-bg">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </span>
+                <span className="button-text">Sign Up</span>
+                <span className="button-spacer">Sign Up</span>
               </Link>
           </form>
         </div>

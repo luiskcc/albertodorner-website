@@ -34,7 +34,7 @@ export default function HomeSelection() {
                         <h2 className="font-cormorant text-5xl text-[#a36e3a] italic" style={{ fontWeight: '300' }}>
                             home A
                         </h2>
-                        <p className="text-gray-600 leading-relaxed" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+                        <p className="text-gray-600 leading-relaxed font-cormorant text-lg px-4" style={{ fontWeight: '400', letterSpacing: '0.5px' }}>
                             Impressive, unobstructed views: the massive volcano Teide and the coast and ocean all the way to the end of the island. It is our most sought-after villa-apartment with its well-designed timeless interior and a minimalistic exterior, including a lava garden, large breakfast terrace, dining area with outdoor kitchen under an architectural pergola and private plunge pool with gorgeous views.
                         </p>
                     </div>
