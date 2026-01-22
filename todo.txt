@@ -1,0 +1,6 @@
+La banda de fondo de este menú lateral debe ser más transparente, y el texto en lugar de negro, gris. La marca de agua de fondo debe ser un poco más clara.
+La opción de “accomodation" debe llevarnos al mosaico de los apartamentos.
+Los textos de al lado de los pies y la piscina natural deben estar en la tipo de la marca y respetar los márgenes laterales (más espacio).
+Los vídeos del mosaico deben ocupar toda la casilla y ver la manera de que no tarden en cargar.(Ignorar de momento)
+Cambiar el icono de book en cada habitación por el modelo adjunto:<Captura de pantalla 2025-12-03 a las 21.25.23.png>(Ignorar de momento)
+En el fondo, la marca de agua del icono de AD hay que hacerla como en el modelo propuesto: bajar la intensidad de la trama y ajustar colocación en subsecciones.(Ignorar de momento)

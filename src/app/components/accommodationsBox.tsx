@@ -112,8 +112,8 @@ export default function AccommodationsBox({
                         </h1>
                     </div>
 
-                    <div className="pl-16 w-[400px] pt-20 overflow-visible">
-                        <p className="text-gray-500 text-xl w-[500px] leading-relaxed" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: '300', letterSpacing: '0.3px' }} dangerouslySetInnerHTML={{ __html: description }}>
+                    <div className="pl-20 pr-8 w-[400px] pt-20 overflow-visible">
+                        <p className="text-gray-500 text-xl w-[500px] leading-relaxed font-cormorant" style={{ fontWeight: '400', letterSpacing: '0.5px' }} dangerouslySetInnerHTML={{ __html: description }}>
                         </p>
                     </div>
                 </div>
