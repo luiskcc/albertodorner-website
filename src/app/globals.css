@@ -92,8 +92,8 @@ html {
     width: 100%;
     height: 100%;
     background-image: url('/gray-logo-ad.svg');
-    background-repeat: no-repeat; 
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 60% center;
     background-size: 300%;
     opacity: 0.3;
     z-index: -1;
@@ -163,4 +163,102 @@ html {
 
   .animated-book-button:hover .button-text {
       transform: translateX(100%);
+  }
+
+  /* animated book button - boats section (blue-gray) */
+
+  .animated-book-button-boats {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 16px;
+      overflow: hidden;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-decoration: none;
+      border: 2px solid #A8BBC7;
+      border-radius: 9999px;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+
+  .animated-book-button-boats .button-bg {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: white;
+      background: linear-gradient(135deg, #A8BBC7 0%, #c5d4de 100%);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+  }
+
+  .animated-book-button-boats .button-bg svg {
+      width: 20px;
+      height: 20px;
+  }
+
+  .animated-book-button-boats .button-text {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: #A8BBC7;
+      transition: transform 0.3s ease;
+  }
+
+  .animated-book-button-boats .button-spacer {
+      visibility: hidden;
+  }
+
+  .animated-book-button-boats:hover .button-bg {
+      transform: translateX(0);
+  }
+
+  .animated-book-button-boats:hover .button-text {
+      transform: translateX(100%);
+  }
+
+  /* Boats grid container */
+  .boats-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 0.75rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .boats-grid-1,
+  .boats-grid-2,
+  .boats-grid-3,
+  .boats-grid-4,
+  .boats-grid-5,
+  .boats-grid-6 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .boats-grid-1 { grid-column: 1; grid-row: 1; }
+  .boats-grid-2 { grid-column: 2; grid-row: 1; }
+  .boats-grid-3 { grid-column: 3; grid-row: 1; }
+  .boats-grid-4 { grid-column: 1; grid-row: 2; }
+  .boats-grid-5 { grid-column: 2; grid-row: 2; }
+  .boats-grid-6 { grid-column: 3; grid-row: 2; }
+
+  /* Grid bottom wide - spans 2 columns */
+  .grid-bottom-wide {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+    position: relative;
+    overflow: hidden;
   }

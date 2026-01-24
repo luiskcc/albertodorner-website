@@ -23,8 +23,7 @@ export default function Hero({ videoUrl }) {
                         playsInline
                         className="hidden md:block absolute inset-0 w-full h-full object-cover"
                     >
-                        <source src="/01_MASTER_Banner.mov" type="video/quicktime" />
-                        <source src="/intro-video.mp4" type="video/mp4" />
+                        <source src="https://demoairbnbbucket.s3.us-east-2.amazonaws.com/albertodorner-web/01_MASTER_Banner.mp4" type="video/mp4" />
                     </video>
 
                     {/* Mobile Video - Responsive */}
@@ -35,8 +34,7 @@ export default function Hero({ videoUrl }) {
                         playsInline
                         className="md:hidden absolute inset-0 w-full h-full object-cover"
                     >
-                        <source src="/01_MASTER_Responsive.mov" type="video/quicktime" />
-                        <source src="/intro-video.mp4" type="video/mp4" />
+                        <source src="https://demoairbnbbucket.s3.us-east-2.amazonaws.com/albertodorner-web/01_MASTER_Responsive.mp4" type="video/mp4" />
                     </video>
 
                     {/* Fallback Image */}
