@@ -32,7 +32,7 @@ export default function AccommodationsBox({
     videoId,
     videoThumbnail = "/DJI_0285_1-1.jpg",
     carouselImages = defaultImages,
-    title = "home A",
+    title = "lodge Superior A",
     description = "Impressive, unobstructed views: the massive volcano Teide and the coast and ocean all the way to the end of the island. <br /> <br /> It is our most sought-after villa-apartment with its well-designed timeless interior and a minimalistic exterior, including a lava garden, large breakfast terrace, dining area with outdoor kitchen under an architectural pergola and private plunge pool with gorgeous views.",
     gradientClass = "bg-[linear-gradient(135deg,_#9b7145_0%,_#8ee3ec_50%,_#e0d6cb_100%)]"
 }: AccommodationsBoxProps) {
@@ -42,7 +42,8 @@ export default function AccommodationsBox({
     const [isLeftImageHovered, setIsLeftImageHovered] = useState(false);
     return (
         <>
-            <div className="flex flex-col p-10">
+            {/* Accommodations Box  */}
+            <div className="flex flex-col p-10 ml-36">
                 <div className="flex flex-row justify-center items-end mt-20">
                     <div
                         className="relative overflow-hidden"

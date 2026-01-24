@@ -18,15 +18,23 @@ export default function OfferProduct() {
                         <span className="text-[#a36e3a] text-xl font-serif">2 bathrooms</span>
                     </div>
                 </div>
-                <a href="/booknow" className="animated-book-button">
-                    <span className="button-bg">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                        </svg>
-                    </span>
-                    <span className="button-text">Book Your Dream</span>
-                    <span className="button-spacer">Book Your Dream</span>
-                </a>
+                {/* Book Card */}
+                <div className="relative overflow-hidden flex items-center justify-center" style={{ width: '220px', height: '220px', backgroundColor: '#a36e3a' }}>
+                    {/* Watermark background */}
+                    <div
+                        className="absolute inset-0 pointer-events-none"
+                        style={{
+                            backgroundImage: "url('/gray-logo-ad.svg')",
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: '70%',
+                            backgroundSize: '300%',
+                            opacity: 0.4
+                        }}
+                    />
+                    <a href="/booknow" className="relative z-10 bg-white/90 text-[#a36e3a] px-10 py-3 rounded-full font-cormorant text-xl italic hover:bg-white transition-colors" style={{ fontWeight: '400' }}>
+                        Book
+                    </a>
+                </div>
             </div>
         </div>
     )

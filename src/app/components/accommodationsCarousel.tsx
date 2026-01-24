@@ -22,35 +22,35 @@ const accommodationsImages = [
     },
 ]
 
-export default function AccommodationsCarousel  () {
+export default function AccommodationsCarousel() {
     return (
         <div>
             <div className="container mt-50">
-                    <Swiper
-                        modules={[Autoplay, Pagination, Navigation]}
-                        spaceBetween={0}
-                        slidesPerView={1}
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        }}
-                        loop={true}
-                        speed={2000}
-                        className="w-400"
-                    >
-                        {accommodationsImages.map((item) => (
-                            <SwiperSlide key={item.id}>
-                                <div className="flex flex-row gap-4">
-                                    <Image src={item.image} alt={item.title} width={900} height={500} className="w-1/2" />
-                                    <div className={`w-1/3 px-8 text-start text-white top-0 ${item.style} flex flex-col justify-center space-y-4`}>
-                                        <h2 className="font-cormorant text-4xl italic text-white" style={{ fontWeight: '300', letterSpacing: '0.5px' }}>{item.title}</h2>
-                                        <p className="text-gray-100 leading-relaxed" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '15px' }}>{item.description}</p>
-                                    </div>
+                <Swiper
+                    modules={[Autoplay, Pagination, Navigation]}
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    speed={2000}
+                    className="w-400"
+                >
+                    {accommodationsImages.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <div className="flex flex-row gap-4">
+                                <Image src={item.image} alt={item.title} width={900} height={500} className="w-1/2" />
+                                <div className={`w-1/3 px-8 text-start text-white top-0 ${item.style} flex flex-col justify-center space-y-4`}>
+                                    <h2 className="font-cormorant text-4xl italic text-white" style={{ fontWeight: '300', letterSpacing: '0.5px' }}>{item.title}</h2>
+                                    <p className="text-gray-100 leading-relaxed" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '15px' }}>{item.description}</p>
                                 </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-            <div className="mb-40"></div>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className="mb-40"></div>
             </div>
         </div>
     )

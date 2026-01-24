@@ -1,6 +1,13 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isBoatsSection = pathname.startsWith('/adboatrental');
+  const accentColor = isBoatsSection ? '#A8BBC7' : '#a36e3a';
+  const buttonClass = isBoatsSection ? 'animated-book-button-boats' : 'animated-book-button';
+
   return (
     <footer className="bg-white border-t border-gray-200 text-gray-900 pt-12 pb-6">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -16,7 +23,7 @@ export default function Footer() {
           <div className="mb-4" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px' }}>
             <span className="font-semibold">Address</span> · Playa del Socorro Nº 1-2, Los Realejos, Tenerife
           </div>
-          <Link href="/booknow/" className="animated-book-button">
+          <Link href="/booknow/" className={buttonClass}>
                 <span className="button-bg">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -28,15 +35,16 @@ export default function Footer() {
           <div className="font-semibold mb-2 mt-6 font-cormorant" style={{ fontSize: '14px', letterSpacing: '0.5px' }}>SHARE YOUR FEEDBACK</div>
           <div className="font-semibold mb-2 font-cormorant" style={{ fontSize: '14px', letterSpacing: '0.5px' }}>FOLLOW US</div>
           <div className="flex space-x-4 text-2xl">
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg fill="currentColor text-[#a36e3a]" viewBox="0 0 24 24" className="w-6 h-6"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.13.62a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z"/></svg>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ color: accentColor }}>
+              <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.13.62a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z"/></svg>
             </a>
-            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-              <svg viewBox="0 0 576 512" fill="currentColor tex" className="w-6 h-6"><path d="M549.655 124.083c-6.281-23.725-24.958-42.401-48.684-48.684C465.281 64 288 64 288 64s-177.281 0-212.971 11.399c-23.726 6.283-42.403 24.959-48.684 48.684C16 159.773 16 256 16 256s0 96.227 10.345 131.917c6.281 23.725 24.958 42.401 48.684 48.684C110.719 448 288 448 288 448s177.281 0 212.971-11.399c23.726-6.283 42.403-24.959 48.684-48.684C560 352.227 560 256 560 256s0-96.227-10.345-131.917zM232 336V176l142.857 80L232 336z"/></svg>            </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style={{ color: accentColor }}>
+              <svg viewBox="0 0 576 512" fill="currentColor" className="w-6 h-6"><path d="M549.655 124.083c-6.281-23.725-24.958-42.401-48.684-48.684C465.281 64 288 64 288 64s-177.281 0-212.971 11.399c-23.726 6.283-42.403 24.959-48.684 48.684C16 159.773 16 256 16 256s0 96.227 10.345 131.917c6.281 23.725 24.958 42.401 48.684 48.684C110.719 448 288 448 288 448s177.281 0 212.971-11.399c23.726-6.283 42.403-24.959 48.684-48.684C560 352.227 560 256 560 256s0-96.227-10.345-131.917zM232 336V176l142.857 80L232 336z"/></svg>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style={{ color: accentColor }}>
               <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.29h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
             </a>
-            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ color: accentColor }}>
               <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
             </a>
           </div>
@@ -45,12 +53,12 @@ export default function Footer() {
         <div>
           <h3 className="font-bold mb-4 font-cormorant text-lg" style={{ letterSpacing: '0.5px' }}>EXPLORE OUR WORLD</h3>
           <ul className="space-y-2" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '14px' }}>
-            <li><Link href="/adboutiquevillas" className="hover:underline text-[#a36e3a]">Villas</Link></li>
-            <li><Link href="/adboatrental" className="hover:underline text-[#a36e3a]">Boats</Link></li>
-            <li><Link href="/caradventures" className="hover:underline text-[#a36e3a]">Cars</Link></li>
-            <li><Link href="/professionals" className="hover:underline text-[#a36e3a]">About Us</Link></li>
-            <li><Link href="/privacy-policy" className="hover:underline text-[#a36e3a]">Privacy Policy</Link></li>
-            <li><Link href="/terms-of-service" className="hover:underline text-[#a36e3a]">Terms of Service</Link></li>
+            <li><Link href="/adboutiquevillas" className="hover:underline" style={{ color: accentColor }}>Villas</Link></li>
+            <li><Link href="/adboatrental" className="hover:underline" style={{ color: accentColor }}>Boats</Link></li>
+            <li><Link href="/caradventures" className="hover:underline" style={{ color: accentColor }}>Cars</Link></li>
+            <li><Link href="/professionals" className="hover:underline" style={{ color: accentColor }}>About Us</Link></li>
+            <li><Link href="/privacy-policy" className="hover:underline" style={{ color: accentColor }}>Privacy Policy</Link></li>
+            <li><Link href="/terms-of-service" className="hover:underline" style={{ color: accentColor }}>Terms of Service</Link></li>
           </ul>
         </div>
         {/* Join Our Family */}
@@ -76,7 +84,7 @@ export default function Footer() {
             <p className="text-xs text-gray-500 mt-2" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
               I would like to be kept updated on exclusive news, travel inspiration and offers from the legendary world of albertodorner, and receive tailored communications based on my interests and circumstances. To learn more about how we store and process your data please visit our <a href="#" className="underline">Privacy Policy</a>. You may opt out of receiving our updates at any time, either by using an unsubscribe link or by contacting us at unsubscribe@albertodorner.com.
             </p>
-            <Link href="/booknow/" className="animated-book-button">
+            <Link href="/booknow/" className={buttonClass}>
                 <span className="button-bg">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

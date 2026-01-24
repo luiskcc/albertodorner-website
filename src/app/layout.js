@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Cormorant } from 'next/font/google'
 import LoadingScreen from './components/LoadingScreen'
+import { SidebarProvider } from './context/SidebarContext'
 
 
 const cormorant = Cormorant({
@@ -19,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.className} scroll-smooth`}>
       <body className="relative">
-        <LoadingScreen />
-        {children}
+        <SidebarProvider>
+          <LoadingScreen />
+          {children}
+        </SidebarProvider>
       </body>
     </html>
   )
